@@ -1,0 +1,33 @@
+@import '../../styles/index.scss';
+
+.c-btn-combo {
+    position: absolute;
+    top: 70%;
+    left: 93%;
+    gap: 10px;
+    min-width: 160px;
+    background-color: $color-white;
+    border: 1px solid $color-border;
+    border-radius: 8px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    z-index: 8;
+
+    &__edit {
+        @include displayFlex(row, start, center, 12px);
+        padding: 12px 16px;
+        border-bottom: 1px solid $color-border;
+        cursor: pointer;
+    }
+
+    &__delete {
+        @include displayFlex(row, start, center, 12px);
+        padding: 12px 16px;
+        cursor: pointer;
+    }
+
+    &__body {
+        height: 400px;
+        padding: 24px;
+    }
+
+}

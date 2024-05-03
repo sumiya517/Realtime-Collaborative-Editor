@@ -1,0 +1,20 @@
+@import '../../styles/index.scss';
+
+.c-add-workspace-card {
+    @include displayFlex(column, space-between, center, 48px);
+    background-color: $color-primary;
+    width: 229px;
+    border-radius: 12px;
+    padding: 74px 0 35px 0;
+
+    &__img{
+        cursor: pointer;
+    }
+
+    &__text {
+        color: $color-white;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 22px;
+    }
+}

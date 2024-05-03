@@ -1,0 +1,55 @@
+@import '../../styles/index.scss';
+
+.c-sticky {
+    position: absolute;
+    box-shadow: 3px 3px 2px 0px #C1C1C133;
+
+    &__textarea {
+        width: 98%;
+        height: 98%;
+        background-color: transparent;
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 18px;
+        text-align: center;
+        border: 0;
+        outline: 0;
+        padding: 10px;
+        resize: none;
+        overflow: hidden;
+        cursor: move;
+    }
+    &__resize{
+    position: absolute;
+        width: 10px;
+        height: 10px;
+    }
+
+    &__resize-se{
+        
+        bottom: 0;
+        right: 0;
+        cursor: se-resize;
+    }
+
+    &__resize-sw{
+        bottom: 0;
+        left: 0;
+        cursor: sw-resize;
+    }
+
+    &__delete{
+        top: -10px;
+        right: 2px;
+        cursor: pointer;
+    }
+
+    &__resize-nw{
+        top: 0;
+        left: 0;
+        cursor: nw-resize;
+    }
+}

@@ -1,0 +1,81 @@
+@import '../../styles/index.scss';
+
+.p-workspace {
+    width: calc(100vw - 142px);
+    background-color: $color-white-light;
+    border: 1px solid $color-border;
+    border-radius: 20px;
+
+    &__header {
+        padding: 16px 23px;
+        border-bottom: 1px solid $color-border;
+        @include displayFlex(row, space-between, center, 0);
+    }
+
+    &__header--notsaved {
+        padding: 16px 23px;
+        border: 1px solid $color-primary;
+        border-radius: 20px 20px 0 0;
+        @include displayFlex(row, space-between, center, 0);
+    }
+
+    &__header-name {
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 27px;
+    }
+
+    &__header-right {
+        @include displayFlex(row, space-between, center, 24px);
+        cursor: pointer;
+    }
+
+    &__header-add {
+        @include displayFlex(row, space-between, center, 8px);
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 19px;
+        color: $color-primary;
+        border: 1px solid $color-primary;
+        border-radius: 8px;
+        padding: 8px 22px;
+    }
+
+    &__header-edit {
+        height: 20px;
+        width: 20px;
+        cursor: pointer;
+    }
+
+    &__body {
+        padding: 21px 24px;
+        @include displayFlex(row, center, center, 24px);
+        flex-wrap: wrap;
+
+    }
+
+    &__body--row {
+        padding: 21px 24px;
+        @include displayFlex(column, center, center, 24px);
+        flex-wrap: wrap;
+
+    }
+
+    &__footer {
+        padding: 16px 23px;
+        border-top: 1px solid $color-border;
+        @include displayFlex(row, space-between, center, 0);
+    }
+
+    &__profile-share {
+        @include displayFlex(row, start, center, 10px);
+        background-color: $color-primary;
+        padding: 8px 14px;
+        border-radius: 8px;
+        color: $color-white;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 22px;
+    }
+}

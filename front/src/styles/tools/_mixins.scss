@@ -1,0 +1,57 @@
+// Font-size and Line-height
+@mixin font($size, $lineHeight) {
+  font-size: $size;
+  line-height: $lineHeight;
+}
+
+// Flexbox
+@mixin displayFlex($direction: null, $jusCon: null, $align: null, $gap:null) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $jusCon;
+  align-items: $align;
+  gap: $gap;
+}
+
+// Extra large devices
+@mixin xl {
+  @media (max-width: #{$screen-xl}) {
+    @content;
+  }
+}
+
+// Large devices
+@mixin lg {
+  @media (max-width: #{$screen-lg}) {
+    @content;
+  }
+}
+
+// Medium devices
+@mixin md {
+  @media (max-width: #{$screen-md}) {
+    @content;
+  }
+}
+
+// Small devices
+@mixin sm {
+  @media (max-width: #{$screen-sm}) {
+    @content;
+  }
+}
+
+// custom scroll bar
+@mixin custom_scrollbar {
+  scrollbar-width: thin;
+  &::-webkit-scrollbar {
+    width: 12px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: $color-secondary-three;
+    border-radius: 6px;
+    border: 3px solid $color-white;
+    background-clip: content-box;
+  }
+}

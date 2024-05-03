@@ -1,0 +1,6 @@
+.p-dashboard {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(229px, 1fr));
+    gap: 20px;
+    max-width: calc(100vw - 140px);
+}

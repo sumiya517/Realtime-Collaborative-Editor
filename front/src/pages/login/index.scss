@@ -1,0 +1,112 @@
+@import '../../styles/index.scss';
+
+.p-login {
+    @include displayFlex(row, center, center, 0);
+    width: 100%;
+    height: 100vh;
+
+    &__banner {
+        @include displayFlex(row, center, center, 0);
+        background-color: $color-primary;
+        width: 50%;
+        height: 100%;
+    }
+
+    &__container {
+        @include displayFlex(column, center, center, 0);
+        width: 50%;
+        height: 100%;
+        padding: 0px 122px;
+        background-color: $color-white;
+    }
+
+    &__header {
+        @include displayFlex(column, center, center, 0);
+        margin-bottom: 28px;
+    }
+
+    &__header-title {
+        font-weight: 700;
+        line-height: 43px;
+        margin: 40px 0 0 0;
+    }
+
+    &__form {
+        @include displayFlex(column, initial, initial, 24px);
+        width: 100%;
+        border-radius: 12px;
+    }
+
+    &__input-container {
+        @include displayFlex(row, start, center, 19px);
+        padding: 16px 25px;
+        border: 1px solid $color-gray-cloud;
+        border-radius: 10px;
+        width: 100%;
+
+        &:hover {
+            border: 1px solid $color-gray;
+        }
+    }
+
+    &__input-group {
+        @include displayFlex(column, start, start, 0);
+        border-left: 1px solid $color-gray-light;
+        padding-left: 19px;
+        width: 100%;
+    }
+
+    &__input-label {
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 17px;
+        color: $color-gray;
+    }
+
+    &__input-field {
+        @include displayFlex(row, space-between, center, 0);
+        width: 100%;
+        height: 19px;
+        font-weight: 500;
+        font-size: 12px;
+
+        & :last-child {
+            margin-bottom: 19px;
+        }
+
+        & :focus {
+            border: 0;
+        }
+    }
+
+    &__input-field--custom {
+        flex-grow: 1;
+        border: none;
+        outline: none;
+    }
+
+    &__password-icon {
+        width: 24px;
+        height: 24px;
+        cursor: pointer;
+    }
+
+    &__form__error__text {
+        color: $color-error;
+        font-size: 12px;
+        line-height: 17px;
+    }
+
+    &__submit-button {
+        width: 100%;
+        padding: 7px 0;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 25px;
+        cursor: pointer;
+        border: none;
+        border-radius: 6px;
+        background-color: $color-primary;
+        color: $color-white;
+    }
+}

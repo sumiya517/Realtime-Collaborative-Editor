@@ -1,0 +1,29 @@
+@import '../../styles/index.scss';
+
+.l-sidebar {
+    color: #fff;
+    width: 86px;
+    border-right: 1px solid $color-border;
+    height: 100%;
+    position: fixed;
+    top: 80px;
+
+    &__list {
+        @include displayFlex(column, center, center, 10px);
+        list-style-type: none;
+        margin: 0;
+        padding-top: 18px;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        padding: 10px 30px;
+        cursor: pointer;
+    }
+
+    &__item--selected{
+        border-left: 3px solid $color-primary;
+        margin-left: -3px;
+    }
+}

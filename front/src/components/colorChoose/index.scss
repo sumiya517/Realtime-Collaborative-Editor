@@ -1,0 +1,23 @@
+@import '../../styles/index.scss';
+
+.c-palette {
+    position: absolute;
+    top: 0;left: 105%; ;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    width: 130px;
+    padding: 10px;
+    background-color: $color-white;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    z-index: 9;
+    &__color{
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+    }
+    &__color--active{
+        border: 3px solid $color-primary;
+    }
+}

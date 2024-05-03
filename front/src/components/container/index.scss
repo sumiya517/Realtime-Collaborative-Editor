@@ -1,0 +1,83 @@
+@import '../../styles/index.scss';
+
+.c-container {
+    gap: 10px;
+    background-color: $color-white;
+    border: 1px solid $color-border;
+    border-radius: 16px;
+
+    &--disabled {
+        gap: 10px;
+        width: 300px;
+        background-color: $color-white;
+        border: 1px solid $color-border;
+        border-radius: 16px;
+        pointer-events: none;
+        cursor: not-allowed;
+        opacity: 0.6;
+    }
+
+    &__header {
+        position: relative;
+        @include displayFlex(row, space-between, center, 0);
+        padding: 16px;
+        border-bottom: 1px solid $color-border;
+    }
+
+    &__header-menu {
+        cursor: pointer;
+    }
+
+    &__header-menu--active {
+        background-color: $color-light-grey;
+        border-radius: 50%;
+    }
+
+    &__header-detail {
+        @include displayFlex(column, space-between, start, 6px);
+        width: 100%;
+    }
+
+    &__header-name {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 22px;
+    }
+
+    &__header-input {
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 15px;
+        color: $color-gray;
+
+        &:focus {
+            border: 0;
+            border-radius: 4px;
+            outline: 1px solid $color-primary;
+        }
+    }
+
+    &__body {
+        position: relative;
+        height: 400px;
+        padding: 24px;
+    }
+
+    &__body--row {
+        @include displayFlex(row, end, center, 0);
+        position: relative;
+        height: 150px;
+        padding: 24px;
+    }
+
+    &__footer  {
+        @include displayFlex(row, space-between, center, 0);
+        padding: 16px;
+        border-top: 1px solid $color-border;
+
+        & > *{
+            cursor: pointer;
+        }
+        
+    }
+}

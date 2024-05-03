@@ -1,0 +1,406 @@
+{
+	"info": {
+		"_postman_id": "98baf2da-4125-4138-bc38-c0f4529a731a",
+		"name": "Sticky-notes",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26746743"
+	},
+	"item": [
+		{
+			"name": "workspace-get-all",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"workspace-1\",\r\n    \"containers\": [\r\n        {\r\n            \"owner\": \"sumiya@bjitgroup.com\",\r\n            \"stickyNotes\": [\r\n                {\r\n                    \"color\": \"red\",\r\n                    \"coordinates\": {\r\n                        \"x\": \"\",\r\n                        \"y\": \"\",\r\n                        \"height\": \"\",\r\n                        \"width\": \"\"\r\n                    }\r\n                },\r\n                {\r\n                    \"color\": \"red\",\r\n                    \"coordinates\": {\r\n                        \"x\": \"\",\r\n                        \"y\": \"\",\r\n                        \"height\": \"\",\r\n                        \"width\": \"\"\r\n                    }\r\n                }\r\n            ]\r\n        },\r\n        {\r\n            \"owner\": \"sumiya@bjitgroup.com\",\r\n            \"stickyNotes\": [\r\n                {\r\n                    \"color\": \"red\",\r\n                    \"coordinates\": {\r\n                        \"x\": \"\",\r\n                        \"y\": \"\",\r\n                        \"height\": \"\",\r\n                        \"width\": \"\"\r\n                    }\r\n                },\r\n                {\r\n                    \"color\": \"red\",\r\n                    \"coordinates\": {\r\n                        \"x\": \"\",\r\n                        \"y\": \"\",\r\n                        \"height\": \"\",\r\n                        \"width\": \"\"\r\n                    }\r\n                }\r\n            ]\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/api/workspace",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"workspace"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "workspace-get",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"workspace-1\",\r\n    \"containers\": [\r\n        {\r\n            \"owner\": \"sumiya@bjitgroup.com\",\r\n            \"stickyNotes\": [\r\n                {\r\n                    \"color\": \"red\",\r\n                    \"coordinates\": {\r\n                        \"x\": \"\",\r\n                        \"y\": \"\",\r\n                        \"height\": \"\",\r\n                        \"width\": \"\"\r\n                    }\r\n                },\r\n                {\r\n                    \"color\": \"red\",\r\n                    \"coordinates\": {\r\n                        \"x\": \"\",\r\n                        \"y\": \"\",\r\n                        \"height\": \"\",\r\n                        \"width\": \"\"\r\n                    }\r\n                }\r\n            ]\r\n        },\r\n        {\r\n            \"owner\": \"sumiya@bjitgroup.com\",\r\n            \"stickyNotes\": [\r\n                {\r\n                    \"color\": \"red\",\r\n                    \"coordinates\": {\r\n                        \"x\": \"\",\r\n                        \"y\": \"\",\r\n                        \"height\": \"\",\r\n                        \"width\": \"\"\r\n                    }\r\n                },\r\n                {\r\n                    \"color\": \"red\",\r\n                    \"coordinates\": {\r\n                        \"x\": \"\",\r\n                        \"y\": \"\",\r\n                        \"height\": \"\",\r\n                        \"width\": \"\"\r\n                    }\r\n                }\r\n            ]\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/api/workspace",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"workspace"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "workspace-create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"meeting-2\",\r\n    \"members\": [],\r\n    \"stickynotes\":[]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/api/workspace",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"workspace"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "workspace-edit",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"workspace-1\",\r\n    \"containers\": [\r\n        {\r\n            \"owner\": \"sumiya@bjitgroup.com\",\r\n            \"stickyNotes\": [\r\n                {\r\n                    \"color\": \"red\",\r\n                    \"coordinates\": {\r\n                        \"x\": \"\",\r\n                        \"y\": \"\",\r\n                        \"height\": \"\",\r\n                        \"width\": \"\"\r\n                    }\r\n                },\r\n                {\r\n                    \"color\": \"red\",\r\n                    \"coordinates\": {\r\n                        \"x\": \"\",\r\n                        \"y\": \"\",\r\n                        \"height\": \"\",\r\n                        \"width\": \"\"\r\n                    }\r\n                }\r\n            ]\r\n        },\r\n        {\r\n            \"owner\": \"sumiya@bjitgroup.com\",\r\n            \"stickyNotes\": [\r\n                {\r\n                    \"color\": \"red\",\r\n                    \"coordinates\": {\r\n                        \"x\": \"\",\r\n                        \"y\": \"\",\r\n                        \"height\": \"\",\r\n                        \"width\": \"\"\r\n                    }\r\n                },\r\n                {\r\n                    \"color\": \"red\",\r\n                    \"coordinates\": {\r\n                        \"x\": \"\",\r\n                        \"y\": \"\",\r\n                        \"height\": \"\",\r\n                        \"width\": \"\"\r\n                    }\r\n                }\r\n            ]\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/api/workspace/65ee70f0fc89c3c0dd9265f8",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"workspace",
+						"65ee70f0fc89c3c0dd9265f8"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "workspace-delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/api/workspace/65ee70f0fc89c3c0dd9265f8",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"workspace",
+						"65ee70f0fc89c3c0dd9265f8"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "container-get-all",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/api/container",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"container"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "container-create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/api/container",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"container"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "container-edit",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/api/container",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"container"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "container-delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/api/container/65ee7740ae0be145f85abbeb",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"container",
+						"65ee7740ae0be145f85abbeb"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "stickynote-get-all",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"content\": {\"text\":\"text text text text\"},\r\n    \"userId\": \"65d33e0d6db2acdbb7d8e6d0\",\r\n    \"workspaceId\":\"65d33faa6db2acdbb7d8e6da\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/api/stickynote",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"stickynote"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "stickynote-create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"content\": {\"text\":\"text text text text\"},\r\n    \"userId\": \"65d33e0d6db2acdbb7d8e6d0\",\r\n    \"workspaceId\":\"65d33faa6db2acdbb7d8e6da\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/api/stickynote",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"stickynote"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "stickynote-edit",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"text\": \"ddd\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/api/stickynote/65eec7b53850bb08cd098f61",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"stickynote",
+						"65eec7b53850bb08cd098f61"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "stickynote-delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/api/stickynote/65eec7b53850bb08cd098f61",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"stickynote",
+						"65eec7b53850bb08cd098f61"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user/register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"qweqwe\",\r\n    \"email\":\"akhi@gmail.com\",\r\n    \"password\":\"123456\",\r\n    \"workspaces\":\"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/api/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"register"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

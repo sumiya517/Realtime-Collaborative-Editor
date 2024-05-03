@@ -1,0 +1,77 @@
+@import '../../styles/index.scss';
+
+.l-header {
+    width: 100%;
+    @include displayFlex(row, start, center, 0);
+    background-color: $color-white;
+    position:fixed;
+    z-index: 99;
+
+    &__logo {
+        border-right: 1px solid $color-border;
+        border-bottom: 1px solid $color-border;
+        padding: 30px 23px;
+        width: 86px;
+        height: 80px;
+    }
+
+    &__left {
+        @include displayFlex(row, space-between, center, 0);
+        width: 100%;
+        border-bottom: 1px solid $color-border;
+        padding: 18px 25px;
+    }
+
+    &__search-box {
+        @include displayFlex(row, start, center, 0);
+        
+    }
+
+    &__search-input {
+        padding: 10.5px;
+        padding-left: 42px;
+        font-size: 16px;
+        border: 0;
+        border-radius: 5px;
+        background-color: $color-gray-lighter;
+        outline: none;
+
+        &::placeholder {
+            color: $color-dark-gray;
+        }
+
+        &::-ms-input-placeholder {
+            /* Edge 12 -18 */
+            color: red;
+        }
+    }
+
+    &__search-button {
+        padding-left: 8px;
+        cursor: pointer;
+    }
+
+    &__profile {
+        @include displayFlex(row, start, center, 24px);
+    }
+
+    &__profile-share {
+        @include displayFlex(row, start, center, 10px);
+        background-color: $color-primary;
+        padding: 8px 14px;
+        border-radius: 8px;
+        color: $color-white;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 22px;
+    }
+
+    &__profile-img {
+        height: 44px;
+        width: 44px;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+
+}
